@@ -98,7 +98,10 @@ function displayAlchProfits(prices, mapping, useLowMargin) {
   // Sort descending by profit
   itemsWithProfit.sort((a, b) => b.profit - a.profit);
 
-  for (const item of itemsWithProfit) {
+  //filter the top 10
+  const top10Items = itemsWithProfit.slice(0, 10);
+
+  for (const item of top10Items) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${item.name}</td>
