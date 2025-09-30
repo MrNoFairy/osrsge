@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>osrsge</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>OSRS Profits: </h1>
+
+  <div id="status">Loading...</div>
+
+  <section>
+    <h2>Alchable Items</h2>
+    <input type="checkbox" id="margin-toggle-alch" />Use Low Margin
+    <table id="alch-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Buy Price</th>
+          <th>High Alch Value</th>
+          <th>Fee (Nature Rune)</th>
+          <th>Profit</th>
+        </tr>
+	  </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </section>
+  
+  <section>
+    <h2>Flipping</h2>
+    <table id="flipping-table">
+      <thead>
+        <tr>
+          <th>Item </th>
+		  <th>Low Price</th>
+		  <th>High Price</th>
+		  <th>Profit</th>
+          <th>Fee</th>
+		  <th>Low Volume (5m)</th>
+		  <th>High Volume (5m)</th>
+		  <th>Category</th>
+		  <th>Final Profit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Unfinished Potion Profits</h2>
+	<input type="checkbox" id="margin-toggle-potion" checked="true" />Use Low Margin
+    <table id="potion-table">
+      <thead>
+        <tr>
+          <th>Herb</th>
+		  <th>Herb Price</th>
+		  <th>Vial</th>
+		  <th>Fee</th>
+		  <th>Total Cost</th>
+          <th>Unf Potion</th>
+		  <th>Potion Price</th>
+		  <th>Taxed Profit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  
+    <section>
+    <h2>Degrim Herbs Profits</h2>
+	<input type="checkbox" id="margin-toggle-degrim" checked="true" />Use Low Margin
+    <table id="degrim-table">
+      <thead>
+        <tr>
+          <th>Herb (Grim)</th>
+		  <th>Herb Price</th>
+		  <th>Fee</th>
+		  <th>Total Cost</th>
+          <th>Herb</th>
+		  <th>Herb Price</th>
+		  <th>Taxed Profit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  
+  <section>
+    <h2>Secondaries Profits</h2>
+	<input type="checkbox" id="margin-toggle-secondary" checked="true" />Use Low Margin
+    <table id="secondaries-table">
+      <thead>
+        <tr>
+          <th>Ingredient </th>
+		  <th>Ingredient Price</th>
+		  <th>Fee</th>
+		  <th>Total Cost</th>
+          <th>Secondary</th>
+		  <th>Secondary Price</th>
+		  <th>Taxed Profit</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
